@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    line-height: 160%;
+    list-style-type: none ;
+}
+
+body {
+    background-color: #B91450;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenitore {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 25px;
+    margin:auto;
+    margin-block: 40px;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form, 
+.btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#nomePasseggero {
+background-color: gray;
+
+}
+
