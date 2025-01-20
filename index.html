@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biglietto del treno</title>
+</head>
+<body>
+
+      <form action="">
+        <div class="row g-3 row-cols-2">
+            <div class="col">
+                <p>Nome Cognome</p>
+                <input class="form-control" placeholder="Nome Completo" type="text" id="nomeCognome" required />
+            </div>
+            <div class="col">
+                <p>Km da percorrere</p>
+                <input class="form-control" placeholder="chilometri" type="number" id="chilometri" required />
+            </div>    
+            <div class="col">
+                <p>Fascia d'età</p>
+                <select class="form-select" id="eta" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Over-60">Over 60</option>
+                </select>
+            </div>
+            <div class="col">
+                <button id="btnGenera" class="btn btn-primary ">Genera</button>
+            </div>
+            <div class="col">
+                <button id="btnAnnulla" class="btn btn-primary ">Annulla</button>
+            </div>
+        </div>
+      </form>
+
+      <!--biglietto da stampare-->
+     
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-header" id="">Dettagli passeggeri</div>
+        <div class="card-body">
+          <div class="row ">
+            <div class="col-8">
+                <ul class="list-unstyled"></ul>
+                <li><span id="nomePasseggero"></span></li>
+                <li><span id="offerta"></span></li>
+                <li><span id="costoBiglietto"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!--scriptjavascript-->
+    <script defer src="main.js"></script>
+</body>
+</html>
