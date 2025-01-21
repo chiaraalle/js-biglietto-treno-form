@@ -20,6 +20,11 @@ h1{
     text-align: center;
 }
 
+h5{
+    color:#B91450;
+    text-align: center;
+}
+
 .contenitore {
     background-color: white;
     border-radius: 20px;
@@ -28,14 +33,10 @@ h1{
     margin:auto;
     margin-block: 40px;
     width: 90%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex-direction: column;
+    
 }
 
-.form, 
-.btn {
+.form {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -43,12 +44,52 @@ h1{
     justify-content: space-around;
 }
 
-.flex {
+input {
+    text-align: center;
+}
+
+.formSelect,
+.formControl{
+    border: 1px solid #B91450;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn {
     display: flex;
     gap: 10px;
     align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#btnGenera,
+#btnAnnulla {
+    font-weight: bold;
+    font-size: medium;
+    color: #B91450;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#btnGenera:hover,
+#btnAnnulla:hover {
+    background-color: #B91450;
+    color: white ;
+    border: 1px solid rgb(253, 150, 110);
+}
+
+.flex {
     border: 1px solid black;
-    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
 }
 
 #nomePasseggero {

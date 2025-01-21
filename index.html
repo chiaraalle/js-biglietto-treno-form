@@ -11,20 +11,20 @@
     <h1>calcola il prezzo del tuo biglietto</h1>
 
     <form action="">
-        <div class="contenitore row g-3 row-cols-2 ">
+        <div class="contenitore">
             <div class="form">
-                <div class="col">
-                    <p>Nome Cognome</p>
-                    <input class="form-control" placeholder="Nome Completo" type="text" id="nomeCognome" required />
+                <div class="nomeCognome">
+                    <h5>Nome Cognome</h5>
+                    <input class="formControl" placeholder="Nome Completo" type="text" id="nomeCognome" required />
                 </div>
-                <div class="col">
-                    <p>Km da percorrere</p>
-                    <input class="form-control" placeholder="chilometri" type="number" id="chilometri" required />
+                <div class="chilometri">
+                    <h5>Km da percorrere</h5>
+                    <input class="formControl" placeholder="chilometri" type="number" id="chilometri" required />
                 </div>    
-                <div class="col">
-                    <p>Fascia d'età</p>
-                    <select class="form-select" id="eta" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
+                <div class="fasciaEta">
+                    <h5>Fascia d'età</h5>
+                    <select class="formSelect" id="eta" aria-label="Default select example">
+                        <option selected>Seleziona</option>
                         <option value="Maggiorenne">Maggiorenne</option>
                         <option value="Minorenne">Minorenne</option>
                         <option value="Over-60">Over 60</option>
@@ -44,12 +44,11 @@
     <div class="contenitore">
         <h3 class="card-header">Dettagli passeggeri</h3>
         <div class="card-body">
-            <div class="flex col-8">
-                <ul class="list-unstyled"></ul>
-                <li><span id="nomePasseggero">dcjn s</span></li>
-                <li><span id="offerta">ssxa</span></li>
-                <li><span id="costoBiglietto">asaxaz</span></li>
-              </ul>
+            <div class="flex">
+                <span id="nomePasseggero">dcjn s</span>
+                <span id="offerta">ssxa</span>
+                <span id="costoBiglietto">asaxaz</span>
+              
             </div>
         </div>
     </div>
