@@ -15,11 +15,10 @@ const costoBiglietto = document.getElementById('costoBiglietto');
 btnGenera.addEventListener("click", function(event){
 
   cartaPasseggero.classList.remove('nascosto');
-  cartaPasseggero.classList.add('mostra');
-  
 
   event.preventDefault()
-  console.log( chilometri.value )
+
+  
   nomePasseggero.innerHTML = nomeCognome.value
   if(eta.value == "Over-60"){
     offerta.innerHTML = "Biglietto Ridotto Over 60"
@@ -32,6 +31,6 @@ btnGenera.addEventListener("click", function(event){
     costoBiglietto.innerHTML = (chilometri.value * prezzoBigliettoAlChilometro).toFixed(2);
   }
 
-  
+  //aggiungi random per generare i numeri carrozza e codice cp
   
 })
