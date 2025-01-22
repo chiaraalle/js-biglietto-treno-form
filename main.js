@@ -11,6 +11,8 @@ const cartaPasseggero = document.getElementById("cartaPasseggero");
 const nomePasseggero = document.getElementById('nomePasseggero');
 const offerta = document.getElementById('offerta');
 const costoBiglietto = document.getElementById('costoBiglietto');
+const carrozza = document.getElementById('carrozza');
+const codiceCP = document.getElementById('codiceCP');
 
 btnGenera.addEventListener("click", function(event){
 
@@ -31,6 +33,6 @@ btnGenera.addEventListener("click", function(event){
     costoBiglietto.innerHTML = (chilometri.value * prezzoBigliettoAlChilometro).toFixed(2);
   }
 
-  //aggiungi random per generare i numeri carrozza e codice cp
-  
+   carrozza.innerHTML = Math.floor(Math.random() * 20) + 1;
+   codiceCP.innerHTML = Math.floor(Math.random() * 9999) + 1;
 })
